@@ -560,6 +560,6 @@ vertex3d.prototype = {
 	document.body.onmousemove = function(e) {
 	camera.rotate.x = e.pagey/window.innerHeight * 180 - 90;
 	camera.rotate.y = e.pagex/window.innerWidth * 180 - 90;
-	//document.onmousedown = function() {camera.zoom = Math.random()*1+1};
-	//document.onmouseup = function() {camera.zoom = 1};
+	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
+	document.onmouseup = function() {camera.zoom = 1};
 };
