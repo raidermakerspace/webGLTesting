@@ -557,9 +557,9 @@ vertex3d.prototype = {
 		}, 1000/60);
 		textSetChanger();
 	};
-	document.body.onmousemove = function(e) {
-	camera.rotate.x = e.pageY/window.innerHeight * 180 - 90;
-	camera.rotate.y = e.pageX/window.innerWidth * 180 - 90;
-	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
-	document.onmouseup = function() {camera.zoom = 1};
+	//document.body.onmousemove = function(e) {
+	//camera.rotate.x = e.pageY/window.innerHeight * 180 - 90;
+	//camera.rotate.y = e.pageX/window.innerWidth * 180 - 90;
+	//document.onmousedown = function() {camera.zoom = Math.random()*1+1};
+	//document.onmouseup = function() {camera.zoom = 1};
 };
