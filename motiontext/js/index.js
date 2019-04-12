@@ -238,11 +238,11 @@ vertex3d.prototype = {
 	var ctx	= canvas.getContext("2d");
 	ctx.strokeStyle = strokeColor;
 		
-	window.onresize = function() {
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
-		camera.display.x = window.innerWidth/2;
-		camera.display.y = window.innerHeight/2;
+	//window.onresize = function() {
+	//	canvas.width = window.innerWidth;
+	//	canvas.height = window.innerHeight;
+	//	camera.display.x = window.innerWidth/2;
+	//	camera.display.y = window.innerHeight/2;
 	};
 	
 	
@@ -557,7 +557,7 @@ vertex3d.prototype = {
 		}, 1000/60);
 		textSetChanger();
 	};
-	document.body.onmousemove = function(e) {
+	//document.body.onmousemove = function(e) {
 	camera.rotate.x = window.innerHeight * 180 - 90;
 	camera.rotate.y = window.innerWidth * 180 - 90;
 	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
