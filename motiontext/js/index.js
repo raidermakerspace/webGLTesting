@@ -226,8 +226,8 @@ vertex3d.prototype = {
 		}
 	};
 
-	var strokeColor = "rgba(255,255,255,0.1)";
-	var backgroundColor = "rgba(0,0,0,1)";
+	var strokeColor = "rgba(0,0,0,0.1)";
+	var backgroundColor = "rgba(255,255,255,1)";
 	var vibrateFlag = false;
 	
 	var canvas = document.getElementById("canvas");
@@ -545,8 +545,8 @@ vertex3d.prototype = {
 				strokeColor = "rgba(0,0,0,0.1)";
 				backgroundColor = "rgba(255,255,255,1)";
 			} else {
-				strokeColor = "rgba(255,255,255,0.1)";
-				backgroundColor = "rgba(0,0,0,1)";
+				strokeColor = "rgba(0,0,0,0.1)";
+				backgroundColor = "rgba(255,255,255,1)";
 			};
 			ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 			ctx.fillStyle = backgroundColor;
@@ -558,8 +558,8 @@ vertex3d.prototype = {
 		textSetChanger();
 	};
 	document.body.onmousemove = function(e) {
-	camera.rotate.x = e.pagey/window.innerHeight * 180 - 90;
-	camera.rotate.y = e.pagex/window.innerWidth * 180 - 90;
+	camera.rotate.x = window.innerHeight * 180 - 90;
+	camera.rotate.y = window.innerWidth * 180 - 90;
 	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
 	document.onmouseup = function() {camera.zoom = 1};
 };
