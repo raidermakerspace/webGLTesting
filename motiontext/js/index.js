@@ -557,7 +557,7 @@ vertex3d.prototype = {
 		}, 1000/60);
 		textSetChanger();
 	};
-	//document.body.onmousemove = function(e) {
+	document.body.onmousemove = function(e) {
 	camera.rotate.x = e.pagey/window.innerHeight * 180 - 90;
 	camera.rotate.y = e.pagex/window.innerWidth * 180 - 90;
 	//document.onmousedown = function() {camera.zoom = Math.random()*1+1};
