@@ -9,7 +9,6 @@ var settings = {
 
 
 $(document).ready(function() {
-    var audio = $("#sound");
 
     function animate(divid) {
 
@@ -21,33 +20,25 @@ $(document).ready(function() {
 
         if (divid == "a") {
             $("#a").css("border-color", "#1aff00");
-            $("#tune").attr("src", "http://www.chiptape.com/chiptape/sounds/medium/Sound17.wav");
             setTimeout(function() {
                 $("#a").css("border-color", "#0b7000");
             }, 200);
         } else if (divid == "b") {
             $("#b").css("border-color", "#ff0b00");
-            $("#tune").attr("src", "http://www.chiptape.com/chiptape/sounds/medium/R2chirp.wav");
             setTimeout(function() {
                 $("#b").css("border-color", "#c30800");
             }, 200);
         } else if (divid == "c") {
             $("#c").css("border-color", "#ffec00");
-            $("#tune").attr("src", "http://www.chiptape.com/chiptape/sounds/medium/BEEP2.wav");
             setTimeout(function() {
                 $("#c").css("border-color", "#c3b400");
             }, 200);
         } else if (divid == "d") {
             $("#d").css("border-color", "#29abd0");
-            $("#tune").attr("src", "http://www.chiptape.com/chiptape/sounds/medium/blob.wav");
             setTimeout(function() {
                 $("#d").css("border-color", "#196d85");
             }, 200);
         }
-
-        audio[0].pause();
-        audio[0].load();
-        audio[0].play();
 
     }
 
@@ -109,10 +100,6 @@ $(document).ready(function() {
                 console.log("WRONG");
                 $("#fail").show();
                 $("#fail").addClass("bigEntrance");
-                $("#tune").attr("src", "http://www.chiptape.com/chiptape/sounds/medium/MidwaySatanSOUND45.WAV");
-                audio[0].pause();
-                audio[0].load();
-                audio[0].play();
                 $("#simon, #count").css("filter", "blur(5px)");
                 $("#simon, #count").css("-webkit-filter", "blur(5px)");
                 settings.clicked = 0;
