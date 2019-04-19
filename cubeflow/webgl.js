@@ -6,11 +6,8 @@ main();
 // Start here
 //
 
-//cnv = createCanvas(windowWidth-25,windowHeight-25);
-
 function main() {
   //const canvas = document.querySelector('#glcanvas');
-  const canvas = createCanvas(windowWidth-25,windowHeight-25);
   const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
   // If we don't have a GL context, give up now
