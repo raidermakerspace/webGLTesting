@@ -146,7 +146,7 @@ function initBuffers(gl) {
   // for each face.
 
   const faceColors = [
-    [0.7,  0.7,  0.0,  0.0],    // Front face
+    [0.0,  0.7,  0.0,  1.0],    // Front face
     [1.0,  0.0,  0.0,  1.0],    // Back face: red
     [0.0,  1.0,  0.0,  1.0],    // Top face: green
     [0.0,  0.0,  1.0,  1.0],    // Bottom face: blue
@@ -204,7 +204,7 @@ function initBuffers(gl) {
 // Draw the scene.
 //
 function drawScene(gl, programInfo, buffers, deltaTime) {
-  gl.clearColor(0.0, 0.0, 0.0, 1.0);  // Clear to black, fully opaque
+  gl.clearColor(255/255, 255/255, 255/255, 255/255);  // Clear to black, fully opaque
   gl.clearDepth(1.0);                 // Clear everything
   gl.enable(gl.DEPTH_TEST);           // Enable depth testing
   gl.depthFunc(gl.LEQUAL);            // Near things obscure far things
