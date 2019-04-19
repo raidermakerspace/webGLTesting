@@ -5,3 +5,7 @@ canvas {
 video {
 	display: none;
 }
+
+.background {
+	background-color: black;
+}
