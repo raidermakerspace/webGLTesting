@@ -1,8 +1,6 @@
 canvas {
 	border: 2px solid red;
 	background-color: black;
-	position: fixed;
-	width: 98%;
 }
 video {
 	display: none;
